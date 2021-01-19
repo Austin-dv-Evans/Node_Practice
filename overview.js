@@ -1,5 +1,3 @@
-console.log("Hello Programming hub");
-
 // Three components of Node.js
 
 // import required modules
@@ -25,7 +23,9 @@ console.log("Hello Programming hub");
 I/O 
 A function to read a file may start reading a file and return the control to the execution environment immediately so that the next instruciton can be executed.
 
-Thanks to Callback functions?
+Thanks to nonblocking asynchronous nature
 
-
+Node is continuously monitoring the event queue to know when the database is ready to 
+send the response to the request. while a thread is waiting for the database it servers
+another request
 */

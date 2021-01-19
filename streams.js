@@ -1,4 +1,5 @@
-const stream = require("stream");
+// const stream = require("stream");
+import stream from "stream";
 
 /* 
 The stream module is useful for creating new types of stream instances
@@ -27,9 +28,9 @@ doesn't f with null.
 
 Almost all Node.js applications, no matter how simple, use streams in some manner. The following is an example of using streams in a Node.js application that implements an HTTP server:
 */
-const http = require("http");
+import { createServer } from "http";
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
   // `req` is an http.IncomingMessage, which is a readable stream.
   // `res` is an http.ServerResponse, which is a writable stream.
 
@@ -59,3 +60,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(1337);
+
+// each stream is an event emmitter instance
